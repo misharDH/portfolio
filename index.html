@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofoli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="gambar/new.png"></a>
+            <button onclick="myFunction()" class="button">darkmode</button>
+            <div class="nav-links" id="navLinks">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-times" onclick="hideMenu()"></i></a>
+                </div>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">WORK EXPERIENCE</a></li>
+                    <li><a href="">EDUCATION</a></li>
+                    <li><a href="">SKILL</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <a href="#"><i class="fas fa-bars" onclick="showMenu()"></i></a>
+        </nav>
+
+<div class="text-box">
+    <h1>Mishar Din Hidayatullah </h1>
+    <p>Was born in 1999 at West Sumbawa, June, 3th. <br> A simple person, who love to try new experience.<br> I may not know lot things, but it's just proof that we can always became better .</p>
+    <a href="" class="hero-btn">See more</a>
+</div>
+    </section>
+    
+<!-- experience -->
+<section class="experience">
+    <h1>Work Experience</h1>
+    <p>My work experience mostly in university and in organization</p>
+
+    <div class="row">
+        <div class="experience-columb">
+            <h3>Asistant Laboratorium </h3>
+            <p>2019-2020</p>
+        </div>
+
+        <div class="experience-columb">
+            <h3>Head of Content Media <br>Earth Hour Depok</h3>
+            <p>2019-2021 </p>
+        </div>
+
+        <div class="experience-columb">
+            <h3>human resource <br>Green comumunity Gunadarma</h3>
+            <p>2018-2020</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- education -->
+<section class="education">
+    <h1>Education</h1>
+    <p>Here all my education until now</p>
+
+    <div class="row">
+        <div class="experience-columb">
+            <h3>PRIMARY</h3>
+            <img src="gambar/sd.jpg" >
+            <p>SDN 09 Taliwang <br>2005-2011</p>
+        </div>
+
+        <div class="experience-columb">
+            <h3>jUNIOR HIGH</h3>
+            <img src="gambar/logo-madrasah-mi-mts-dan-ma-wa.jpg">
+            <p>MTsN 1 Taliwang<br> 2011-2014</p>
+        </div>
+
+        <div class="experience-columb">
+            <h3>SENIOR HIGH</h3>
+            <img src="gambar/sma.jpg">
+            <p>SMAN 2 Mataram <br> 2014-2017</p>
+        </div>
+        
+    </div>
+    <div class="experience-columb">
+        <h3>GRADUATE</h3>
+        <img src="gambar/gun.jpg">
+        <p>Mechanical Engginer - Gunadarma <br> 2017-now</p>
+    </div>
+
+    </div>
+
+</section>
+
+<!-- skill -->
+<section class="skill">
+    <h1>Skill</h1>
+    <p>here are some of app that i'm good at</p>
+
+    <div class="row">
+        <div class="skill-col">
+            <img src="gambar/autocad.png">
+            <h3>AutoCAD</h3>
+            <p>AutoCAD is a commercial computer-aided design and drafting software application</p>
+        </div>
+
+        <div class="skill-col">
+            <img src="gambar/solidwork.png">
+            <h3>solidWork</h3>
+            <p>SolidWorks is a solid modeling computer-aided design and computer-aided engineering computer program published by Dassault Systèmes, that runs primarily on Microsoft Windows.</p>
+        </div>
+
+        <div class="skill-col">
+            <img src="gambar/94e9035a11b4869bec9266f730084bac.png">
+            <h3>Adobe</h3>
+            <p>Adobe is application That focus on multimedia like editing etc.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- call to action -->
+<section class="cta">
+    <h1>contact bisa di hubungi</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+
+</section>
+
+<!-- pesan -->
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+  
+  <!-- footer -->
+  <section class="footer">
+      <h4>About Us</h4>
+      <p>Mishar D H</p>
+      <div class="icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+      </div>
+  
+  </section> 
+
+
+
+<!-- toggle -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-225px";
+    }
+
+</script>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
+
